@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PTITApp1</string>
+    <string-array name="uni">
+        <item name="PTIT">PTIT</item>
+        <item name="TMU">TMU</item>
+        <item name="FPT">FPT</item>
+        <item name="BKA">BKA</item>
+    </string-array>
+    <string-array name="phep">
+        <item>+</item>
+        <item>-</item>
+        <item>*</item>
+        <item>/</item>
+    </string-array>
+    <string-array name="tech">
+        <item>Android</item>
+        <item>IOS</item>
+        <item>Linux</item>
+        <item>MacOS</item>
+        <item>Mobile</item>
+        <item>Window</item>
+        <item>Ubuntu</item>
+    </string-array>
+</resources>

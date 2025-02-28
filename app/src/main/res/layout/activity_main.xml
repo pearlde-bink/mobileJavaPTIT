@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/txtNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Nhap so thu nhat"
+        android:inputType="text" />
+
+
+    <EditText
+        android:id="@+id/txtNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nhap so thu hai"
+        android:inputType="text" />
+
+    <Spinner
+        android:id="@+id/spTinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/phep" />
+
+    <EditText
+        android:id="@+id/txtKetQua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Kết quả:"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nhap gio: "
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nhap ngay:"
+        android:inputType="text" />
+
+    <ListView
+        android:id="@+id/ListItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:hint="Nhap Thanh Pho:" />
+</LinearLayout>
