@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/title"
-        android:text="Volume and surface area of a sphere"
+        android:text="Right circular cone "
         android:textStyle="bold"
         android:textSize="20dp"
         android:textAlignment="center"
@@ -19,9 +19,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txt"
+        android:id="@+id/rad"
         android:textSize="20dp"
-        android:text="Enter radius:"
+        android:text="r = "
         app:layout_constraintTop_toBottomOf="@+id/title"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="30dp"
@@ -29,51 +29,58 @@
     <EditText
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:id="@+id/rad"
+        android:id="@+id/radVal"
         android:textSize="20dp"
-        app:layout_constraintLeft_toRightOf="@+id/txt"
-        app:layout_constraintTop_toTopOf="@+id/txt"
+        app:layout_constraintLeft_toRightOf="@+id/rad"
+        app:layout_constraintTop_toTopOf="@+id/rad"
         android:layout_marginLeft="20dp"></EditText>
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/sphere"
-        app:layout_constraintTop_toBottomOf="@+id/txt"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp">
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/area"
-            android:checked="true"
-            android:text="Area"></RadioButton>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/volume"
-            android:checked="true"
-            android:text="Volume"></RadioButton>
-    </RadioGroup>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn"
-        app:layout_constraintTop_toBottomOf="@+id/sphere"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="100dp"
-        android:text="Calculate"></Button>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/kq"
+        android:id="@+id/height"
+        android:textSize="20dp"
+        android:text="h = "
+        app:layout_constraintTop_toBottomOf="@+id/rad"
+        app:layout_constraintLeft_toLeftOf="@id/rad"
+        android:layout_marginTop="30dp"></TextView>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/heightVal"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/height"
+        app:layout_constraintTop_toTopOf="@+id/height"
+        android:layout_marginLeft="20dp"></EditText>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        app:layout_constraintTop_toBottomOf="@+id/height"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/gradient_button"
+        android:textColor="@color/white"
+        android:text="Submit"></Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kqv"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/btn"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="100dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kqa"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/kqv"
+        app:layout_constraintLeft_toLeftOf="@id/kqv"
+        android:layout_marginTop="30dp"></TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
